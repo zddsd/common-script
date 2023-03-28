@@ -1,0 +1,8 @@
+option echo off
+option transfer binary
+open  scp://[服务器地址]
+
+cd  /data/confluence_backup
+synchronize remote D:/backups
+close
+exit
